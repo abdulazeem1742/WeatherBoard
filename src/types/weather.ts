@@ -25,6 +25,7 @@ export interface CurrentWeather {
   description: string;
   conditionCode: WeatherCondition;
   icon: string;
+  iconCode?: string;
   sunrise?: number; // unix timestamp
   sunset?: number;  // unix timestamp
   localTime?: string;
@@ -40,6 +41,7 @@ export interface ForecastDay {
   description: string;
   conditionCode: WeatherCondition;
   icon: string;
+  iconCode?: string;
   humidity: number;
   windSpeed: number;
 }

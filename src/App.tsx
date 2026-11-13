@@ -84,6 +84,7 @@ export function App() {
                 <EmptyState
                   title="Explore Weather Worldwide"
                   description="Use the search bar above to look up real-time weather and 5-day forecasts for any major city."
+                  onSelectQuickCity={selectCity}
                 />
               </div>
             )}

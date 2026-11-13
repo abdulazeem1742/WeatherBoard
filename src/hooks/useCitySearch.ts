@@ -76,7 +76,7 @@ export function useCitySearch(
 
     debounceTimerRef.current = setTimeout(() => {
       performSearch(query);
-    }, 300);
+    }, 200);
 
     return () => {
       if (debounceTimerRef.current) {

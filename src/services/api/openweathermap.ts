@@ -74,6 +74,7 @@ export async function fetchCurrentWeather(
     description: data.weather[0].description,
     conditionCode: mapConditionCode(data.weather[0].id),
     icon: getIconUrl(data.weather[0].icon),
+    iconCode: data.weather[0].icon,
     sunrise: data.sys?.sunrise,
     sunset: data.sys?.sunset,
     localTime: undefined,
@@ -150,6 +151,7 @@ export async function fetchForecast(
       description: representative.weather[0].description,
       conditionCode: mapConditionCode(representative.weather[0].id),
       icon: getIconUrl(representative.weather[0].icon),
+      iconCode: representative.weather[0].icon,
       humidity: representative.main.humidity,
       windSpeed: Math.round(representative.wind?.speed * 3.6),
     });

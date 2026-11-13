@@ -32,11 +32,20 @@ export function useWeather(): UseWeatherReturn {
     };
   }, []);
 
-  // Restore last city on mount
+  // Restore last city on mount, or initialize with London
   useEffect(() => {
     const lastCity = getLastCity();
     if (lastCity) {
       setSelectedCity(lastCity);
+    } else {
+      setSelectedCity({
+        id: 'default-london',
+        name: 'London',
+        country: 'United Kingdom',
+        countryCode: 'GB',
+        region: 'Greater London',
+        coordinates: { lat: 51.5074, lon: -0.1278 },
+      });
     }
   }, []);
 

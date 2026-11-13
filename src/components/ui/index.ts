@@ -3,3 +3,4 @@ export { ErrorMessage } from './ErrorMessage';
 export { OfflineBanner } from './OfflineBanner';
 export { ConfirmDialog } from './ConfirmDialog';
 export { EmptyState } from './EmptyState';
+export { WeatherIcon } from './WeatherIcon';

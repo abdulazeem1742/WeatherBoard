@@ -89,6 +89,7 @@ export async function fetchCurrentWeather(
     description,
     conditionCode: condition,
     icon: getConditionIcon(condition, isDay),
+    iconCode: isDay ? '01d' : '01n',
     provider: 'open-meteo',
     fetchedAt: Date.now(),
   };
@@ -131,6 +132,7 @@ export async function fetchForecast(
       description,
       conditionCode: condition,
       icon: getConditionIcon(condition, true),
+      iconCode: '01d',
       humidity: d.relative_humidity_2m_mean?.[i] ?? 0,
       windSpeed: Math.round(d.wind_speed_10m_max?.[i] ?? 0),
     });
