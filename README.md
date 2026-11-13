@@ -113,7 +113,7 @@ public/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/WeatherBoard.git
+git clone https://github.com/abdulazeem1742/WeatherBoard.git
 cd WeatherBoard
 ```
 
